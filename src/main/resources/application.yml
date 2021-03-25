@@ -1,0 +1,13 @@
+spring:
+  #  url per la connessione alla console del db: http://localhost:8080/h2-console
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:foodstorage #impostazione database su RAM
+    #    url: jdbc:h2:file:/data/demo #impostazione database su filesystem
+    driverClassName: org.h2.Driver
+    username: admin
+    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
